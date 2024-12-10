@@ -98,6 +98,7 @@ body {
   font-size: 1em;
   text-align: left;
   color: #e2e3ed;
+  background-color: #202322;
 }
 
 ul,
@@ -209,6 +210,9 @@ footer p {
 
 footer .content-wrapper{
   width: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /*margin: 50px 0;*/
 }
 
@@ -216,24 +220,30 @@ footer .contact {
   margin-bottom: 50px;
 }
 
-footer .social-icons{
-  background-color: #527158;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
+footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
 footer .social-icons p {
+  background-color: #527158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.3125em;
 }
 
+footer .social-icons p i {
+  font-size: 1.1325em;
+}
+
 footer .copyright {
+  display: flex;
+  justify-content: center;
   margin: 20px 0;
 }
 
@@ -305,7 +315,7 @@ input [type=button] {
   margin-bottom: 60px;
 }
 
-.features .article {
+.features article {
   width: 63%;
   margin: 20px 0;
 }
@@ -358,7 +368,12 @@ input [type=button] {
   background-color: #527158;
 }
 
+.mission h2 {
+  line-height: 1.2;
+}
+
 .map figure {
+  width: 100%;
   position: relative;
   padding-bottom: 125%;
   height: 0;
@@ -373,10 +388,18 @@ input [type=button] {
   left: 0;
 }
 
-.contact-content {
+.contact-section {
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
-  background-color: #2a423a;
+}
+
+.contact-section h2 {
+  line-height: 1;
+}
+
+.contact-content {
+    width: 90%;
 }
 
 .contact-content p {
@@ -385,6 +408,12 @@ input [type=button] {
 
 
 /*------ FAQ Page ----*/
+.faq {
+  display: flex;
+  justify-content: center;
+  background-color: #527158;
+}
+
 .faq .content-wrapper{
   display: flex;
   justify-content: center;
@@ -394,18 +423,12 @@ input [type=button] {
   background-color: #527158;
 }
 
-.faq {
-  display: flex;
-  justify-content: center;
-  background-color: #527158;
-  flex-flow: row wrap;
-}
-
 .faq-content {
   display: flex;
   justify-content: center;
   background-color: #527158;
   margin-bottom: 50px;
+  flex-flow: column;
 }
 
 
@@ -629,11 +652,22 @@ input [type=button] {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: row;
   }
 
   footer .contact {
     margin-bottom: 0;
+  }
+
+  footer .footer-content,
+  footer .contact {
+    width: 50%;
+  }
+
+  footer .copyright {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
   }
 
   footer h4 {
@@ -650,9 +684,7 @@ input [type=button] {
     justify-content: space-between;
   } 
   
-  footer .copyright {
-    width: 100%;
-  }
+
 
   /*----About Page */
 
@@ -675,11 +707,16 @@ input [type=button] {
     width: 80%;
   }
 
+  .contact-section p {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
   .contact-content {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-  
+    line-height: 0.75;
   }
 
   /*-----FAQ Page -------*/
