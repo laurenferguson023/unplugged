@@ -660,7 +660,7 @@ input [type=button] {
 
   footer .footer-content,
   footer .contact {
-    width: 50%;
+    width: 80%;
   }
 
   footer .copyright {
